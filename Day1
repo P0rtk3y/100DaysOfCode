@@ -1,0 +1,28 @@
+/* CHALLENGE: write a function that takes a string of values and mask all but the last four values with "#"
+
+  JS NOTES:
+  .replace()
+
+  REGEX NOTES:
+  g perform global match
+  . find a single character, except newline or line terminator
+  (?=n) positive lookahead/match any string that is followed by n
+  {4} Exactly 4 times
+  (...) Capturing group
+  \d digit
+
+*/
+
+//for digit and non-digit strings:
+function maskify(cc) {
+  return cc.replace(/.(?=.{4})/g, "#");
+}
+
+function maskify(cc) {
+  return cc.replace(/.(?=....)/g, "#");
+}
+
+//for digit only strings:
+function maskify(cc) {
+  return cc.replace(/\d(?=\d{4})/g, "#")
+}
