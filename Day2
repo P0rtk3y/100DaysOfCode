@@ -1,4 +1,4 @@
-/* CHALLENGE: write a function that takes a string of values and return the largest and smallest values
+/* CHALLENGE 1: write a function that takes a string of values and return the largest and smallest values
 
   JS NOTES:
   .split()
@@ -20,3 +20,33 @@ function highAndLow(numbers){
   let toArray = numbers.split(" ").sort((a,b) => {return a-b})
   return toArray[toArray.length - 1] + " " + toArray[0]
 }
+
+/* CHALLENGE 2: write a function that returns the middle character of a word.
+If the word's length is odd, return the middle character. 
+If the word's length is even, return the two middle characters. 
+
+  JS NOTES:
+    .slice() 
+    .floor() 
+
+*/
+
+//SOLUTION 1
+
+function getMiddle(s){
+   if(s.length % 2 === 0){
+    return s.slice(s.length/2 - 1, s.length/2 + 1)
+   }else{ 
+    return s[(s.length - 1) / 2]
+  }
+}
+
+//SOLUTION 2
+
+function getMiddle(s){
+  let middle = Math.floor(s.length/2);
+  return s.length % 2 === 0
+        ? s.slice(middle-1, middle+1)
+        : s.slice(middle, middle+1);
+}
+
