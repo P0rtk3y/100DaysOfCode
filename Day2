@@ -26,8 +26,9 @@ If the word's length is odd, return the middle character.
 If the word's length is even, return the two middle characters. 
 
   JS NOTES:
-    .slice() 
-    .floor() 
+    .slice(start, end) start is required. first char is at 0. end is optional and if omitted will select to the end of the string. 
+    .floor() rounds downward to the nearest integer
+    .charAt() 
 
 */
 
@@ -47,6 +48,6 @@ function getMiddle(s){
   let middle = Math.floor(s.length/2);
   return s.length % 2 === 0
         ? s.slice(middle-1, middle+1)
-        : s.slice(middle, middle+1);
+        : s.charAt(middle);
 }
 
