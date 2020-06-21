@@ -1,0 +1,14 @@
+/* CHALLENGE: write a function that takes a string of values and return the largest and smallest values
+
+  JS NOTES:
+  .split()
+  .reduce()
+
+*/
+
+//SOLUTION 1
+
+function highAndLow(numbers){
+  let toArray = numbers.split(" ")
+  return Math.max(...toArray) + " " + Math.min(...toArray)
+}
