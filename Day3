@@ -1,0 +1,21 @@
+/* CHALLENGE: write a function that tests if a string is an isogram. Ignore letter case and assume an empty string is an isogram. 
+
+  JS NOTES:
+  .toLowerCase()
+  new Set()
+  .size
+
+*/
+
+//SOLUTION 1
+
+function isIsogram(str){
+  let isUnique = [...new Set(str.toLowerCase())]
+  return str.toLowerCase() == isUnique.join("")
+}
+
+//SOLUTION 2
+
+function isIsogram(str){
+  return new Set(str.toUpperCase()).size == str.length
+}
