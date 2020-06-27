@@ -1,0 +1,14 @@
+/* CHALLENGE: write a function that adds two numbers together and returns their sum in binary.
+
+  JS NOTES (Bitwise):
+  >>>	Zero fill right shift
+  <<	Zero fill left shift; The first operand is an integer, the second integer is the # of bits of the first operand to be shifted to the left. 
+  >>	Signed right shift; the first operand is an integer, the second operand is the # of bits of the first operand to be shifted to the right. 
+
+  BINARY NOTES (base 2):
+    1 => 1
+    2 => 10
+    3 => 11
+    4 => 100
+    5 => 101
+*/
