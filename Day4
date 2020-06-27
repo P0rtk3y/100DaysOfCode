@@ -28,3 +28,21 @@ function addBinary(a,b) {
   let sum = a+b;
   return (sum >>> 0).toString(2)
 }
+
+//SOLUTION 2
+
+function addBinary(a,b) {
+  return (a+b).toString(2)
+}
+
+//SOLUTION 3
+
+function addBinary(a,b) {
+  let sum = a + b;
+  let res = '';
+  while (sum >= 1) {
+    res = sum % 2 + sum;
+    sum = Math.floor(sum / 2);
+  }
+  return res;
+}
