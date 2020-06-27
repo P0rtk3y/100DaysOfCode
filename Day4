@@ -6,7 +6,7 @@
   >>	Signed right shift; the first operand is an integer, the second operand is the # of bits of the first operand to be shifted to the right. 
 
   JS NOTES:
-    .toString(radix)
+    .toString(radix) // can take an optional radix which must be an integer between 2 and 36. 2 will show a binary. 
 
   BINARY NOTES (base 2):
     1 => 1
@@ -21,3 +21,10 @@
     Base 16 - Hexadecimal 
 
 */
+
+//SOLUTION 1
+
+function addBinary(a,b) {
+  let sum = a+b;
+  return (sum >>> 0).toString(2)
+}
