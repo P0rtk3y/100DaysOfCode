@@ -5,10 +5,19 @@
   <<	Zero fill left shift; The first operand is an integer, the second integer is the # of bits of the first operand to be shifted to the left. 
   >>	Signed right shift; the first operand is an integer, the second operand is the # of bits of the first operand to be shifted to the right. 
 
+  JS NOTES:
+    .toString(radix)
+
   BINARY NOTES (base 2):
     1 => 1
     2 => 10
     3 => 11
     4 => 100
     5 => 101
+
+  RADIX (i.e. Base) - different ways to represent the same number depending on the system
+    Base 2 - Binary 
+    Base 8 - Octal
+    Base 16 - Hexadecimal 
+
 */
