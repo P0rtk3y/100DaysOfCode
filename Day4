@@ -7,6 +7,7 @@
 
   JS NOTES:
     .toString(radix) // can take an optional radix which must be an integer between 2 and 36. 2 will show a binary. 
+    Math.floor // rounds down to the nearest integer (e.g. Math.floor(5.95) => 5)
 
   BINARY NOTES (base 2):
     1 => 1
