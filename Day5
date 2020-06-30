@@ -2,6 +2,7 @@
 
   JS NOTES:
   .reduce()
+  .substring()
   
 
 */
@@ -10,4 +11,14 @@
 
 function createPhoneNumber(numbers){
    return numbers.reduce((p,c) => p.replace('x',c), "(xxx) xxx-xxxx");
+}
+
+//SOLUTION 2
+
+function createPhoneNumber(numbers){
+  numbers = numbers.join('');
+  return '(' + numbers.substring(0, 3) + ') ' 
+      + numbers.substring(3, 6) 
+      + '-' 
+      + numbers.substring(6);
 }
