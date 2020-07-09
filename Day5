@@ -1,7 +1,7 @@
 /* CHALLENGE: Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
   JS NOTES:
-  .reduce() => function(total/initialValue, currentValue, index, array) A function to be run for each element in the array. 
+  .reduce(callback, initialVal) => function(total/initialValue, currentValue, index, array) A function to be run for each element in the array. 
   .replace()
   .substring()
   .slice()

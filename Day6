@@ -1,0 +1,22 @@
+/* CHALLENGE: Make a pgroam that filters an array of strings and returns a list containing only four letter names." 
+    
+   JS NOTES:
+        .forEach() calls a function once for each element in an array, in order.
+        .filter()
+*/
+
+
+//SOLUTION 1
+
+function friend(friends){
+  //your code here
+  let myFriends = []
+  friends.forEach(f => {
+    if(f.length === 4){
+      myFriends.push(f)
+    }
+  })
+  
+  return myFriends;
+}
+
