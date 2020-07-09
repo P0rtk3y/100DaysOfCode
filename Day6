@@ -3,6 +3,7 @@
    JS NOTES:
         .forEach() calls a function once for each element in an array, in order.
         .filter()
+        for...of  used for arrays
 */
 
 
@@ -24,4 +25,15 @@ function friend(friends){
 
 function friend(friends){
   return friends.filter(f => f.length === 4)
+}
+
+//SOLUTION 3
+
+function friend(friends){
+  let myFriends = []  
+  for(f of friends){
+      f.length === 4 ? myFriends.push(f) : console.log("not friend")
+  }
+
+  return myFriends;
 }
