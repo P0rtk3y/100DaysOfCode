@@ -1,4 +1,4 @@
-/* CHALLENGE: Make a pgroam that filters an array of strings and returns a list containing only four letter names." 
+/* CHALLENGE: Make a program that filters an array of strings and returns a list containing only four letter names." 
     
    JS NOTES:
         .forEach() calls a function once for each element in an array, in order.
