@@ -1,3 +1,16 @@
-/* CHALLENGE: Write a function that tests if a number is prime
+/* CHALLENGE: Write a function that tests if a number (not - or 0) is prime
     
 */
+
+//SOLUTION 1
+function isPrime(num){
+    if(num > 1){
+        const ceil = Math.sqrt(num)
+        for(let i = 2; i <= ceil; i++){
+            if (num % i === 0){
+                return false
+            }
+        }
+    }
+    return true;
+}
