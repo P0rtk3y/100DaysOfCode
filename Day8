@@ -14,3 +14,15 @@ function isPrime(num){
     }
     return true;
 }
+
+//SOLUTION 2
+function isPrime(num){
+    let counter = 1
+
+    while(counter++ < num - 1){
+        if(num % counter === 0){
+            return false
+        }
+    }
+    return num > 1;
+}
