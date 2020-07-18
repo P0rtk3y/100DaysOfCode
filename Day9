@@ -1,18 +1,14 @@
 /* CHALLENGE: For any number that is passed in, find the sum of all multiples of 3 or 5 below that number. 
     
-    JS NOTES:
-        .reduce()
 */
 
 //SOLUTION 1
 function solution(number){
-  let multiples = []
-  let counter = 2
-
-    while(counter++ < number){
-        if(counter % 3 === 0 || counter % 5 === 0){
-            multiples.push(counter)
-        }
-    }
-    return 
+  let sum = 0;
+  for (let i = 3; i < number; i++){
+      if (i % 3 == 0 || i % 5 == 0){
+          sum += i;
+      }
+  }
+  return sum;
 }
