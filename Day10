@@ -1,19 +1,25 @@
 /* CHALLENGE: Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements. 
     
     JS NOTES:
-        .forEach()
-        .slice()
+        .filter()
 */
 
 // SOLUTION 1
-var moveZeros = function(arr){
+var moveZeros = function (arr) {
     let filtered = arr.filter(e => e !== 0)
-    let countZero = arr.filter(e => e === 0)
+    let countZeros = arr.filter(e => e === 0).length
 
-    while(countZero > 0){
-        filtered.push(0)
-        countZero--
+    while(countZeros > 0){
+        filtered.push(0);
+        countZeros--;
     }
 
     return filtered;
+}
+
+// SOLUTION 2
+var moveZeros = function (arr) {
+  let filtered = arr.filter(function(num){return num !== 0;});
+  var zerosArray = arr.filter(function(num){return num === 0;});
+  return filtered.concat(zerosArray);
 }
