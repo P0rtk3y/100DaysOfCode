@@ -2,6 +2,7 @@
     
     JS NOTES:
         .filter()
+        .fill()
 */
 
 // SOLUTION 1
@@ -22,4 +23,12 @@ var moveZeros = function (arr) {
   let filtered = arr.filter(function(num){return num !== 0;});
   var zerosArray = arr.filter(function(num){return num === 0;});
   return filtered.concat(zerosArray);
+}
+
+// SOLUTION 3
+var moveZeros = function (arr) {
+  let filtered = arr.filter(e => e !== 0)
+  let countZeros = arr.length - filtered.length
+  
+  return filtered.concat(Array(countZeros).fill(0))
 }
