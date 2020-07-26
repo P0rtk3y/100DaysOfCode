@@ -5,3 +5,11 @@
 
 // SOLUTION 1
 
+function alphabetPosition(text) {
+  return text
+    .toLowerCase()
+    .split('')
+    .filter(t => isNaN(t) && t.toLowerCase() != t.toUpperCase())
+    .map(t => t.charCodeAt() - 96)
+    .join(' ');
+}
