@@ -1,2 +1,7 @@
 /* CHALLENGE: Given a string, replace every letter with its position in the alphabet. Do not return non-letters.
+    JS NOTES:
+        isNaN
 */
+
+// SOLUTION 1
+
